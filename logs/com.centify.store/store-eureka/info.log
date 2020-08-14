@@ -1,0 +1,793 @@
+2020-08-14 11:37:32 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 11:37:33 [INFO ] com.centify.boot.web.embedded.netty.factory.EmbeddedNettyServletWebServerFactoryCustomizerAutoConfiguration$NettyHttpWebServerFactoryCustomizerConfiguration.embeddedNettyFactory[49] - [Container] 启用 Netty Servlet Web Server 容器 :StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, StubPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, MapPropertySource {name='springCloudClientHostInfo'}, OriginTrackedMapPropertySource {name='applicationConfig: [classpath:/application.yml]'}, MapPropertySource {name='springCloudDefaultProperties'}, CachedRandomPropertySource {name='cachedrandom'}, ResourcePropertySource {name='class path resource [eureka/server.properties]'}]} ,netty =
+NettyEmbeddedProperties{  
+     acceptGroupThread=1, 
+     acceptGroupPoolName='1', 
+     workerGroupThread=2, 
+     workerGroupPoolName='workerGroup', 
+     optionSoReuseaddr=true, 
+     optionSoBacklog=128, 
+     optionSoRcvbuf=4096, 
+     childOptionWriteBufferLowWaterMark=32768, 
+     childOptionWriteBufferHighWaterMark=65536, 
+     childOptiontcpNodelay=true, 
+     childOptionsoReuseaddr=true, 
+     childOptionsoKeepalive=false, 
+     childOptionsoRcvbuf=4096, 
+     childOptionsoSndbuf=16384, 
+     requestDataMaxcontentlength=262144, 
+     readTimeoutSeconds=3, 
+     writeTimeoutSeconds=3}
+2020-08-14 11:37:33 [INFO ] com.centify.boot.web.embedded.netty.factory.NettyServletWebServerFactory.logContainer[84] - [Container] Netty环境：Netty/All-in-One , 4.1.51.Final 
+2020-08-14 11:37:33 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring embedded WebApplicationContext
+2020-08-14 11:37:33 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 11:37:33 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5633ed82
+2020-08-14 11:37:34 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 11:37:34 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 11:37:34 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 11:37:34 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 11:37:34 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 11:37:34 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 11:37:35 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597376255748 with initial instances count: 0
+2020-08-14 11:37:35 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 11:37:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 11:37:35 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597376255843, current=UP, previous=STARTING]
+2020-08-14 11:37:35 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 11:37:35 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initAcceptGroup[147] - [Container] acceptGroup线程池Epoll类型：false 
+2020-08-14 11:37:35 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initWorkerGroup[135] - [Container] workerGroup线程池Epoll类型：false 
+2020-08-14 11:37:36 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$0[115] - [Container] 容器启动成功！服务端IP: 0.0.0.0监听端口：9001
+2020-08-14 11:37:36 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 4.006 seconds (JVM running for 5.627)
+2020-08-14 11:37:36 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 11:37:36 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 11:39:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[242] - Got 1 instances from neighboring DS node
+2020-08-14 11:39:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[243] - Renew threshold is: 1
+2020-08-14 11:39:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[254] - Changing status to UP
+2020-08-14 11:40:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:41:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:42:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 11:42:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:43:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:44:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:45:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:46:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:47:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 11:47:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:48:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:49:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:50:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:51:02 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance CMSC-USC/192.168.2.186:cmsc-usc:9000:1.0.0-SNAPSHOT with status UP (replication=false)
+2020-08-14 11:51:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:52:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.updateRenewalThreshold[534] - Current renewal threshold is : 0
+2020-08-14 11:52:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 11:52:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:53:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:54:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:55:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:56:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:57:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 11:57:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:58:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 11:59:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:00:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:01:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:02:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:02:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:03:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:04:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:05:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:06:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:07:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.updateRenewalThreshold[534] - Current renewal threshold is : 0
+2020-08-14 12:07:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:07:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:08:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:09:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:10:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:11:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:12:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:12:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:13:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:14:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:15:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:16:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:17:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:17:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:18:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:19:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:20:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:21:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:22:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.updateRenewalThreshold[534] - Current renewal threshold is : 0
+2020-08-14 12:22:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:22:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:23:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:24:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:25:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:26:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:27:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:27:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:28:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:29:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:30:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:31:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:32:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:32:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:33:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:34:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:35:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:36:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:37:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.updateRenewalThreshold[534] - Current renewal threshold is : 0
+2020-08-14 12:37:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:37:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:38:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:39:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:40:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:41:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:42:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:42:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:43:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:44:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:45:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:46:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:47:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:47:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:48:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:49:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:50:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:51:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:52:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.updateRenewalThreshold[534] - Current renewal threshold is : 0
+2020-08-14 12:52:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:52:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:53:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:54:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:55:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:56:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:57:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 12:57:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:58:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 12:59:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:00:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:01:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:02:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:02:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:03:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:04:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:05:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:06:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:07:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.updateRenewalThreshold[534] - Current renewal threshold is : 0
+2020-08-14 13:07:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:07:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:08:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:09:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:10:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:11:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:12:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:12:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:13:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:14:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:15:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:16:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:17:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:17:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:18:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:19:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:20:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:21:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:22:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.updateRenewalThreshold[534] - Current renewal threshold is : 0
+2020-08-14 13:22:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:22:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:23:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:24:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:25:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:26:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:27:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:27:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:28:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:29:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:30:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:31:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:32:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:32:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:33:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:34:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:35:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:36:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:37:35 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.updateRenewalThreshold[534] - Current renewal threshold is : 0
+2020-08-14 13:37:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:37:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:38:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:39:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:40:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:41:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:42:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:42:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:43:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:44:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:45:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:46:18 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 13:46:19 [INFO ] com.centify.boot.web.embedded.netty.factory.EmbeddedNettyServletWebServerFactoryCustomizerAutoConfiguration$NettyHttpWebServerFactoryCustomizerConfiguration.embeddedNettyFactory[49] - [Container] 启用 Netty Servlet Web Server 容器 :StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, StubPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, MapPropertySource {name='springCloudClientHostInfo'}, OriginTrackedMapPropertySource {name='applicationConfig: [classpath:/application.yml]'}, MapPropertySource {name='springCloudDefaultProperties'}, CachedRandomPropertySource {name='cachedrandom'}, ResourcePropertySource {name='class path resource [eureka/server.properties]'}]} ,netty =
+NettyEmbeddedProperties{  
+     acceptGroupThread=1, 
+     acceptGroupPoolName='1', 
+     workerGroupThread=2, 
+     workerGroupPoolName='workerGroup', 
+     optionSoReuseaddr=true, 
+     optionSoBacklog=128, 
+     optionSoRcvbuf=4096, 
+     childOptionWriteBufferLowWaterMark=32768, 
+     childOptionWriteBufferHighWaterMark=65536, 
+     childOptiontcpNodelay=true, 
+     childOptionsoReuseaddr=true, 
+     childOptionsoKeepalive=false, 
+     childOptionsoRcvbuf=4096, 
+     childOptionsoSndbuf=16384, 
+     requestDataMaxcontentlength=262144, 
+     readTimeoutSeconds=3, 
+     writeTimeoutSeconds=3}
+2020-08-14 13:46:19 [INFO ] com.centify.boot.web.embedded.netty.factory.NettyServletWebServerFactory.logContainer[84] - [Container] Netty环境：Netty/All-in-One , 4.1.51.Final 
+2020-08-14 13:46:19 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring embedded WebApplicationContext
+2020-08-14 13:46:19 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 13:46:19 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@8851ce1
+2020-08-14 13:46:20 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 13:46:20 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 13:46:20 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 13:46:20 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 13:46:20 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 13:46:20 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 13:46:21 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597383981649 with initial instances count: 0
+2020-08-14 13:46:21 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 13:46:21 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 13:46:21 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597383981750, current=UP, previous=STARTING]
+2020-08-14 13:46:21 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 13:46:21 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initAcceptGroup[147] - [Container] acceptGroup线程池Epoll类型：false 
+2020-08-14 13:46:21 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initWorkerGroup[135] - [Container] workerGroup线程池Epoll类型：false 
+2020-08-14 13:46:21 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$0[115] - [Container] 容器启动成功！服务端IP: 0.0.0.0监听端口：9001
+2020-08-14 13:46:22 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 3.977 seconds (JVM running for 5.364)
+2020-08-14 13:46:22 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 13:46:22 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 13:46:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance CMSC-USC/192.168.2.186:cmsc-usc:9000:1.0.0-SNAPSHOT with status UP (replication=false)
+2020-08-14 13:48:21 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[242] - Got 1 instances from neighboring DS node
+2020-08-14 13:48:21 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[243] - Renew threshold is: 1
+2020-08-14 13:48:21 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[254] - Changing status to UP
+2020-08-14 13:49:21 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:50:21 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:51:24 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 13:51:25 [INFO ] com.centify.boot.web.embedded.netty.factory.EmbeddedNettyServletWebServerFactoryCustomizerAutoConfiguration$NettyHttpWebServerFactoryCustomizerConfiguration.embeddedNettyFactory[49] - [Container] 启用 Netty Servlet Web Server 容器 :StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, StubPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, MapPropertySource {name='springCloudClientHostInfo'}, OriginTrackedMapPropertySource {name='applicationConfig: [classpath:/application.yml]'}, MapPropertySource {name='springCloudDefaultProperties'}, CachedRandomPropertySource {name='cachedrandom'}, ResourcePropertySource {name='class path resource [eureka/server.properties]'}]} ,netty =
+NettyEmbeddedProperties{  
+     acceptGroupThread=1, 
+     acceptGroupPoolName='1', 
+     workerGroupThread=2, 
+     workerGroupPoolName='workerGroup', 
+     optionSoReuseaddr=true, 
+     optionSoBacklog=128, 
+     optionSoRcvbuf=4096, 
+     childOptionWriteBufferLowWaterMark=32768, 
+     childOptionWriteBufferHighWaterMark=65536, 
+     childOptiontcpNodelay=true, 
+     childOptionsoReuseaddr=true, 
+     childOptionsoKeepalive=false, 
+     childOptionsoRcvbuf=4096, 
+     childOptionsoSndbuf=16384, 
+     requestDataMaxcontentlength=262144, 
+     readTimeoutSeconds=3, 
+     writeTimeoutSeconds=3}
+2020-08-14 13:51:25 [INFO ] com.centify.boot.web.embedded.netty.factory.NettyServletWebServerFactory.logContainer[84] - [Container] Netty环境：Netty/All-in-One , 4.1.51.Final 
+2020-08-14 13:51:25 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring embedded WebApplicationContext
+2020-08-14 13:51:25 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 13:51:25 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@226de93c
+2020-08-14 13:51:26 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 13:51:26 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 13:51:26 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 13:51:26 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 13:51:26 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 13:51:27 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 13:51:27 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 13:51:27 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 13:51:27 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 13:51:27 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 13:51:27 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 13:51:27 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 13:51:28 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:51:28 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 13:51:28 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 13:51:28 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597384288053 with initial instances count: 0
+2020-08-14 13:51:28 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 13:51:28 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 13:51:28 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 13:51:28 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597384288185, current=UP, previous=STARTING]
+2020-08-14 13:51:28 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 13:51:28 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initAcceptGroup[147] - [Container] acceptGroup线程池Epoll类型：false 
+2020-08-14 13:51:28 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initWorkerGroup[135] - [Container] workerGroup线程池Epoll类型：false 
+2020-08-14 13:51:28 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$0[115] - [Container] 容器启动成功！服务端IP: 0.0.0.0监听端口：9001
+2020-08-14 13:51:28 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 5.724 seconds (JVM running for 7.077)
+2020-08-14 13:51:28 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 13:51:28 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 13:51:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance CMSC-USC/192.168.2.186:cmsc-usc:9000:1.0.0-SNAPSHOT with status UP (replication=false)
+2020-08-14 13:54:27 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 13:54:27 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[79] - Shutting down ...
+2020-08-14 13:54:27 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[84] - Shut down
+2020-08-14 13:54:27 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status DOWN (replication=false)
+2020-08-14 13:54:27 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 13:54:27 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[916] - Shutting down DiscoveryClient ...
+2020-08-14 13:54:30 [INFO ] com.netflix.discovery.DiscoveryClient.unregister[952] - Unregistering ...
+2020-08-14 13:54:30 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.internalCancel[328] - Cancelled instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 (replication=false)
+2020-08-14 13:54:30 [INFO ] com.netflix.discovery.DiscoveryClient.unregister[954] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - deregister  status: 200
+2020-08-14 13:54:30 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[941] - Completed shut down of DiscoveryClient
+2020-08-14 13:54:30 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.stop[165] - [Container] 关闭容器，开始释放资源.
+2020-08-14 13:54:30 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$1[119] - [Container] Netty Http服务停止开始!
+2020-08-14 13:54:30 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$1[123] - [Container] Netty Http服务停止完成!
+2020-08-14 13:54:32 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.stop[177] - [Container] 关闭容器完成.
+2020-08-14 13:54:46 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 13:54:47 [INFO ] com.centify.boot.web.embedded.netty.factory.EmbeddedNettyServletWebServerFactoryCustomizerAutoConfiguration$NettyHttpWebServerFactoryCustomizerConfiguration.embeddedNettyFactory[49] - [Container] 启用 Netty Servlet Web Server 容器 :StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, StubPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, MapPropertySource {name='springCloudClientHostInfo'}, OriginTrackedMapPropertySource {name='applicationConfig: [classpath:/application.yml]'}, MapPropertySource {name='springCloudDefaultProperties'}, CachedRandomPropertySource {name='cachedrandom'}, ResourcePropertySource {name='class path resource [eureka/server.properties]'}]} ,netty =
+NettyEmbeddedProperties{  
+     acceptGroupThread=1, 
+     acceptGroupPoolName='1', 
+     workerGroupThread=2, 
+     workerGroupPoolName='workerGroup', 
+     optionSoReuseaddr=true, 
+     optionSoBacklog=128, 
+     optionSoRcvbuf=4096, 
+     childOptionWriteBufferLowWaterMark=32768, 
+     childOptionWriteBufferHighWaterMark=65536, 
+     childOptiontcpNodelay=true, 
+     childOptionsoReuseaddr=true, 
+     childOptionsoKeepalive=false, 
+     childOptionsoRcvbuf=4096, 
+     childOptionsoSndbuf=16384, 
+     requestDataMaxcontentlength=262144, 
+     readTimeoutSeconds=3, 
+     writeTimeoutSeconds=3}
+2020-08-14 13:54:47 [INFO ] com.centify.boot.web.embedded.netty.factory.NettyServletWebServerFactory.logContainer[84] - [Container] Netty环境：Netty/All-in-One , 4.1.51.Final 
+2020-08-14 13:54:47 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring embedded WebApplicationContext
+2020-08-14 13:54:47 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 13:54:47 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@93501be
+2020-08-14 13:54:48 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 13:54:48 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 13:54:48 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 13:54:48 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 13:54:48 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 13:54:48 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 13:54:48 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597384489559 with initial instances count: 0
+2020-08-14 13:54:49 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 13:54:49 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 13:54:49 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597384489696, current=UP, previous=STARTING]
+2020-08-14 13:54:49 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 13:54:49 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initAcceptGroup[147] - [Container] acceptGroup线程池Epoll类型：false 
+2020-08-14 13:54:49 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initWorkerGroup[135] - [Container] workerGroup线程池Epoll类型：false 
+2020-08-14 13:54:49 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$0[115] - [Container] 容器启动成功！服务端IP: 0.0.0.0监听端口：9001
+2020-08-14 13:54:49 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 4.54 seconds (JVM running for 5.565)
+2020-08-14 13:54:54 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 13:54:54 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 13:56:05 [INFO ] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute[124] - Request execution succeeded on retry #1
+2020-08-14 13:56:55 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[242] - Got 1 instances from neighboring DS node
+2020-08-14 13:56:55 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[243] - Renew threshold is: 1
+2020-08-14 13:56:55 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[254] - Changing status to UP
+2020-08-14 13:57:45 [INFO ] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute[124] - Request execution succeeded on retry #1
+2020-08-14 13:57:55 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 13:58:39 [INFO ] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute[124] - Request execution succeeded on retry #1
+2020-08-14 13:58:55 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 103ms
+2020-08-14 13:59:51 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:00:05 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 9616ms
+2020-08-14 14:00:33 [INFO ] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute[124] - Request execution succeeded on retry #1
+2020-08-14 14:01:48 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 43221ms
+2020-08-14 14:06:10 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 201881ms
+2020-08-14 14:06:10 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:06:10 [INFO ] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute[124] - Request execution succeeded on retry #1
+2020-08-14 14:07:10 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:10:41 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 151061ms
+2020-08-14 14:10:41 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.updateRenewalThreshold[534] - Current renewal threshold is : 0
+2020-08-14 14:10:41 [INFO ] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute[124] - Request execution succeeded on retry #1
+2020-08-14 14:10:41 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:10:41 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[79] - Shutting down ...
+2020-08-14 14:10:41 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[84] - Shut down
+2020-08-14 14:10:41 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status DOWN (replication=false)
+2020-08-14 14:10:41 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 14:10:41 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[916] - Shutting down DiscoveryClient ...
+2020-08-14 14:11:32 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 14:11:33 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing ProtocolHandler ["http-nio-9001"]
+2020-08-14 14:11:33 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting service [Tomcat]
+2020-08-14 14:11:33 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-08-14 14:11:33 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing Spring embedded WebApplicationContext
+2020-08-14 14:11:34 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:11:34 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5b1c32e4
+2020-08-14 14:11:34 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 14:11:34 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:11:34 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:11:34 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:11:34 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:11:35 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:12:02 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 14:12:02 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:12:02 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:12:02 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:12:02 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:12:03 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:12:03 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 14:12:03 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 14:12:03 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597385523089 with initial instances count: 0
+2020-08-14 14:12:03 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 14:12:03 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 14:12:03 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 14:12:03 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597385523246, current=UP, previous=STARTING]
+2020-08-14 14:12:03 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:12:03 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting ProtocolHandler ["http-nio-9001"]
+2020-08-14 14:12:03 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 33.189 seconds (JVM running for 34.979)
+2020-08-14 14:12:03 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 14:12:03 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 14:12:03 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 14:14:03 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[242] - Got 1 instances from neighboring DS node
+2020-08-14 14:14:03 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[243] - Renew threshold is: 1
+2020-08-14 14:14:03 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[254] - Changing status to UP
+2020-08-14 14:15:03 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:16:03 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:17:03 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:17:03 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:18:03 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:19:03 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:22:39 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 156537ms
+2020-08-14 14:22:41 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:23:11 [INFO ] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute[124] - Request execution succeeded on retry #1
+2020-08-14 14:23:41 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 2016ms
+2020-08-14 14:24:47 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 5607ms
+2020-08-14 14:25:01 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:25:01 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[79] - Shutting down ...
+2020-08-14 14:25:01 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[84] - Shut down
+2020-08-14 14:25:01 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status DOWN (replication=false)
+2020-08-14 14:25:01 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 14:25:01 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[916] - Shutting down DiscoveryClient ...
+2020-08-14 14:29:19 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 14:29:21 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing ProtocolHandler ["http-nio-9001"]
+2020-08-14 14:29:21 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting service [Tomcat]
+2020-08-14 14:29:21 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-08-14 14:29:21 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing Spring embedded WebApplicationContext
+2020-08-14 14:29:21 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:29:21 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@765ffb14
+2020-08-14 14:29:21 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 14:29:21 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:29:21 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:29:21 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:29:21 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:29:22 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:29:22 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 14:29:22 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:29:22 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:29:22 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:29:22 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:29:22 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:29:23 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 14:29:23 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 14:29:23 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597386563050 with initial instances count: 0
+2020-08-14 14:29:23 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 14:29:23 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 14:29:23 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 14:29:23 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597386563160, current=UP, previous=STARTING]
+2020-08-14 14:29:23 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:29:23 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting ProtocolHandler ["http-nio-9001"]
+2020-08-14 14:29:23 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 4.362 seconds (JVM running for 5.246)
+2020-08-14 14:29:23 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 14:29:23 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 14:29:23 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 14:31:23 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[242] - Got 1 instances from neighboring DS node
+2020-08-14 14:31:23 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[243] - Renew threshold is: 1
+2020-08-14 14:31:23 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[254] - Changing status to UP
+2020-08-14 14:32:23 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:33:23 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:34:23 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:34:23 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:35:23 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:36:23 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:37:23 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 14:38:09 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 14:38:11 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing ProtocolHandler ["http-nio-9001"]
+2020-08-14 14:38:11 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting service [Tomcat]
+2020-08-14 14:38:11 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-08-14 14:38:17 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing Spring embedded WebApplicationContext
+2020-08-14 14:38:17 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:38:17 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@299b9851
+2020-08-14 14:38:17 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 14:38:17 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:38:17 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:38:18 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:38:18 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:38:18 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:38:22 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 14:38:22 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:38:22 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:38:22 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:38:22 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:38:22 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:38:22 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 14:38:22 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 14:38:22 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597387102870 with initial instances count: 0
+2020-08-14 14:38:22 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 14:38:22 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 14:38:22 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 14:38:23 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597387103032, current=UP, previous=STARTING]
+2020-08-14 14:38:23 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:38:23 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting ProtocolHandler ["http-nio-9001"]
+2020-08-14 14:38:23 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 14.213 seconds (JVM running for 15.254)
+2020-08-14 14:38:23 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 14:39:14 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 14:39:44 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:40:12 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 14:40:12 [INFO ] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute[124] - Request execution succeeded on retry #1
+2020-08-14 14:40:12 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 14:40:12 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 14:41:17 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[242] - Got 1 instances from neighboring DS node
+2020-08-14 14:41:17 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[243] - Renew threshold is: 1
+2020-08-14 14:41:17 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[254] - Changing status to UP
+2020-08-14 14:41:26 [INFO ] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute[124] - Request execution succeeded on retry #1
+2020-08-14 14:42:08 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:42:08 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[79] - Shutting down ...
+2020-08-14 14:42:08 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status DOWN (replication=false)
+2020-08-14 14:42:08 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[84] - Shut down
+2020-08-14 14:42:08 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 14:42:08 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[916] - Shutting down DiscoveryClient ...
+2020-08-14 14:43:31 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 14:43:32 [INFO ] com.centify.boot.web.embedded.netty.factory.EmbeddedNettyServletWebServerFactoryCustomizerAutoConfiguration$NettyHttpWebServerFactoryCustomizerConfiguration.embeddedNettyFactory[49] - [Container] 启用 Netty Servlet Web Server 容器 :StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, StubPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, MapPropertySource {name='springCloudClientHostInfo'}, OriginTrackedMapPropertySource {name='applicationConfig: [classpath:/application.yml]'}, MapPropertySource {name='springCloudDefaultProperties'}, CachedRandomPropertySource {name='cachedrandom'}, ResourcePropertySource {name='class path resource [eureka/server.properties]'}]} ,netty =
+NettyEmbeddedProperties{  
+     acceptGroupThread=1, 
+     acceptGroupPoolName='1', 
+     workerGroupThread=2, 
+     workerGroupPoolName='workerGroup', 
+     optionSoReuseaddr=true, 
+     optionSoBacklog=128, 
+     optionSoRcvbuf=4096, 
+     childOptionWriteBufferLowWaterMark=32768, 
+     childOptionWriteBufferHighWaterMark=65536, 
+     childOptiontcpNodelay=true, 
+     childOptionsoReuseaddr=true, 
+     childOptionsoKeepalive=false, 
+     childOptionsoRcvbuf=4096, 
+     childOptionsoSndbuf=16384, 
+     requestDataMaxcontentlength=262144, 
+     readTimeoutSeconds=3, 
+     writeTimeoutSeconds=3}
+2020-08-14 14:43:32 [INFO ] com.centify.boot.web.embedded.netty.factory.NettyServletWebServerFactory.logContainer[84] - [Container] Netty环境：Netty/All-in-One , 4.1.51.Final 
+2020-08-14 14:43:33 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring embedded WebApplicationContext
+2020-08-14 14:43:33 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:43:33 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1578b8ec
+2020-08-14 14:43:33 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 14:43:33 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:43:33 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:43:33 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:43:33 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:43:34 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 14:43:34 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:43:34 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 14:43:35 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:43:35 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:43:35 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:43:35 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:43:35 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:43:35 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 14:43:35 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 14:43:35 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597387415192 with initial instances count: 0
+2020-08-14 14:43:35 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 14:43:35 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 14:43:35 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 14:43:35 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597387415305, current=UP, previous=STARTING]
+2020-08-14 14:43:35 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:43:35 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initAcceptGroup[147] - [Container] acceptGroup线程池Epoll类型：false 
+2020-08-14 14:43:35 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initWorkerGroup[135] - [Container] workerGroup线程池Epoll类型：false 
+2020-08-14 14:43:35 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$0[115] - [Container] 容器启动成功！服务端IP: 0.0.0.0监听端口：9001
+2020-08-14 14:43:35 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 4.609 seconds (JVM running for 5.629)
+2020-08-14 14:43:40 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 14:43:40 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 14:45:40 [INFO ] com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute[124] - Request execution succeeded on retry #1
+2020-08-14 14:45:46 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:45:46 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[79] - Shutting down ...
+2020-08-14 14:45:46 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status DOWN (replication=false)
+2020-08-14 14:45:46 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 14:45:46 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[84] - Shut down
+2020-08-14 14:45:46 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[916] - Shutting down DiscoveryClient ...
+2020-08-14 14:45:49 [INFO ] com.netflix.discovery.DiscoveryClient.unregister[952] - Unregistering ...
+2020-08-14 14:45:49 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.internalCancel[328] - Cancelled instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 (replication=false)
+2020-08-14 14:45:49 [INFO ] com.netflix.discovery.DiscoveryClient.unregister[954] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - deregister  status: 200
+2020-08-14 14:45:49 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[941] - Completed shut down of DiscoveryClient
+2020-08-14 14:45:49 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.stop[165] - [Container] 关闭容器，开始释放资源.
+2020-08-14 14:45:49 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$1[119] - [Container] Netty Http服务停止开始!
+2020-08-14 14:45:49 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$1[123] - [Container] Netty Http服务停止完成!
+2020-08-14 14:52:20 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 14:52:21 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing ProtocolHandler ["http-nio-9001"]
+2020-08-14 14:52:21 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting service [Tomcat]
+2020-08-14 14:52:21 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-08-14 14:52:22 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing Spring embedded WebApplicationContext
+2020-08-14 14:52:22 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:52:22 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@17c0274c
+2020-08-14 14:52:22 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 14:52:22 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:52:22 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:52:23 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:52:23 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:52:23 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597387946599 with initial instances count: 0
+2020-08-14 14:52:26 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 14:52:26 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 14:52:26 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597387946759, current=UP, previous=STARTING]
+2020-08-14 14:52:26 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:52:26 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Starting ProtocolHandler ["http-nio-9001"]
+2020-08-14 14:52:26 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 8.178 seconds (JVM running for 9.669)
+2020-08-14 14:52:26 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 14:52:29 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 14:52:29 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 14:56:41 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[242] - Got 1 instances from neighboring DS node
+2020-08-14 14:56:41 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[243] - Renew threshold is: 1
+2020-08-14 14:56:41 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[254] - Changing status to UP
+2020-08-14 14:57:00 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:57:00 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[79] - Shutting down ...
+2020-08-14 14:57:00 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[84] - Shut down
+2020-08-14 14:57:00 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status DOWN (replication=false)
+2020-08-14 14:57:00 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 14:57:00 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[916] - Shutting down DiscoveryClient ...
+2020-08-14 14:58:12 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 14:58:13 [INFO ] com.centify.boot.web.embedded.netty.factory.EmbeddedNettyServletWebServerFactoryCustomizerAutoConfiguration$NettyHttpWebServerFactoryCustomizerConfiguration.embeddedNettyFactory[49] - [Container] 启用 Netty Servlet Web Server 容器 :StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, StubPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, MapPropertySource {name='springCloudClientHostInfo'}, OriginTrackedMapPropertySource {name='applicationConfig: [classpath:/application.yml]'}, MapPropertySource {name='springCloudDefaultProperties'}, CachedRandomPropertySource {name='cachedrandom'}, ResourcePropertySource {name='class path resource [eureka/server.properties]'}]} ,netty =
+NettyEmbeddedProperties{  
+     acceptGroupThread=1, 
+     acceptGroupPoolName='1', 
+     workerGroupThread=2, 
+     workerGroupPoolName='workerGroup', 
+     optionSoReuseaddr=true, 
+     optionSoBacklog=128, 
+     optionSoRcvbuf=4096, 
+     childOptionWriteBufferLowWaterMark=32768, 
+     childOptionWriteBufferHighWaterMark=65536, 
+     childOptiontcpNodelay=true, 
+     childOptionsoReuseaddr=true, 
+     childOptionsoKeepalive=false, 
+     childOptionsoRcvbuf=4096, 
+     childOptionsoSndbuf=16384, 
+     requestDataMaxcontentlength=262144, 
+     readTimeoutSeconds=3, 
+     writeTimeoutSeconds=3}
+2020-08-14 14:58:13 [INFO ] com.centify.boot.web.embedded.netty.factory.NettyServletWebServerFactory.logContainer[84] - [Container] Netty环境：Netty/All-in-One , 4.1.51.Final 
+2020-08-14 14:58:13 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring embedded WebApplicationContext
+2020-08-14 14:58:13 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:58:13 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@52bd9a27
+2020-08-14 14:58:13 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 14:58:13 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:58:13 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:58:14 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:58:14 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:58:14 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 14:58:14 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597388295444 with initial instances count: 0
+2020-08-14 14:58:15 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 14:58:15 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 14:58:15 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597388295561, current=UP, previous=STARTING]
+2020-08-14 14:58:15 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 14:58:15 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initAcceptGroup[147] - [Container] acceptGroup线程池Epoll类型：false 
+2020-08-14 14:58:15 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initWorkerGroup[135] - [Container] workerGroup线程池Epoll类型：false 
+2020-08-14 14:58:15 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$0[115] - [Container] 容器启动成功！服务端IP: 0.0.0.0监听端口：9001
+2020-08-14 14:58:15 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 5.596 seconds (JVM running for 6.983)
+2020-08-14 14:58:25 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 14:58:58 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 15:00:09 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 15:00:56 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[242] - Got 1 instances from neighboring DS node
+2020-08-14 15:00:56 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[243] - Renew threshold is: 1
+2020-08-14 15:00:56 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[254] - Changing status to UP
+2020-08-14 15:00:56 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 15:01:49 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 15:01:49 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 15:01:49 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 15:01:49 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 15:01:49 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[79] - Shutting down ...
+2020-08-14 15:01:49 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status DOWN (replication=false)
+2020-08-14 15:01:49 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[84] - Shut down
+2020-08-14 15:01:49 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 15:01:49 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[916] - Shutting down DiscoveryClient ...
+2020-08-14 15:01:52 [INFO ] com.netflix.discovery.DiscoveryClient.unregister[952] - Unregistering ...
+2020-08-14 15:01:52 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.internalCancel[328] - Cancelled instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 (replication=false)
+2020-08-14 15:01:52 [INFO ] com.netflix.discovery.DiscoveryClient.unregister[954] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - deregister  status: 200
+2020-08-14 15:01:52 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[941] - Completed shut down of DiscoveryClient
+2020-08-14 15:01:52 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.stop[165] - [Container] 关闭容器，开始释放资源.
+2020-08-14 15:01:52 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$1[119] - [Container] Netty Http服务停止开始!
+2020-08-14 15:01:52 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$1[123] - [Container] Netty Http服务停止完成!
+2020-08-14 15:01:54 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.stop[177] - [Container] 关闭容器完成.
+2020-08-14 15:02:03 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[655] - The following profiles are active: dev
+2020-08-14 15:02:04 [INFO ] com.centify.boot.web.embedded.netty.factory.EmbeddedNettyServletWebServerFactoryCustomizerAutoConfiguration$NettyHttpWebServerFactoryCustomizerConfiguration.embeddedNettyFactory[49] - [Container] 启用 Netty Servlet Web Server 容器 :StandardServletEnvironment {activeProfiles=[dev], defaultProfiles=[default], propertySources=[ConfigurationPropertySourcesPropertySource {name='configurationProperties'}, StubPropertySource {name='servletConfigInitParams'}, StubPropertySource {name='servletContextInitParams'}, PropertiesPropertySource {name='systemProperties'}, OriginAwareSystemEnvironmentPropertySource {name='systemEnvironment'}, RandomValuePropertySource {name='random'}, MapPropertySource {name='springCloudClientHostInfo'}, OriginTrackedMapPropertySource {name='applicationConfig: [classpath:/application.yml]'}, MapPropertySource {name='springCloudDefaultProperties'}, CachedRandomPropertySource {name='cachedrandom'}, ResourcePropertySource {name='class path resource [eureka/server.properties]'}]} ,netty =
+NettyEmbeddedProperties{  
+     acceptGroupThread=1, 
+     acceptGroupPoolName='1', 
+     workerGroupThread=2, 
+     workerGroupPoolName='workerGroup', 
+     optionSoReuseaddr=true, 
+     optionSoBacklog=128, 
+     optionSoRcvbuf=4096, 
+     childOptionWriteBufferLowWaterMark=32768, 
+     childOptionWriteBufferHighWaterMark=65536, 
+     childOptiontcpNodelay=true, 
+     childOptionsoReuseaddr=true, 
+     childOptionsoKeepalive=false, 
+     childOptionsoRcvbuf=4096, 
+     childOptionsoSndbuf=16384, 
+     requestDataMaxcontentlength=262144, 
+     readTimeoutSeconds=3, 
+     writeTimeoutSeconds=3}
+2020-08-14 15:02:04 [INFO ] com.centify.boot.web.embedded.netty.factory.NettyServletWebServerFactory.logContainer[84] - [Container] Netty环境：Netty/All-in-One , 4.1.51.Final 
+2020-08-14 15:02:04 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring embedded WebApplicationContext
+2020-08-14 15:02:04 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 15:02:04 [INFO ] com.netflix.config.DynamicPropertyFactory.getInstance[281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@230a73f2
+2020-08-14 15:10:16 [INFO ] com.sun.jersey.server.impl.application.WebApplicationImpl._initiate[815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-08-14 15:10:16 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 15:10:16 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 15:10:16 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 15:10:16 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 15:10:17 [INFO ] com.centify.boot.web.embedded.netty.context.NettyServletContext.log[319] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 15:10:17 [INFO ] com.netflix.config.sources.URLConfigurationSource.<init>[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[371] - Initializing Eureka in region us-east-1
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[70] - Using JSON encoding codec LegacyJacksonJson
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[71] - Using JSON decoding codec LegacyJacksonJson
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[80] - Using XML encoding codec XStreamXml
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>[81] - Using XML decoding codec XStreamXml
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints[43] - Resolving eureka endpoints via configuration
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.DiscoveryClient.initScheduledTasks[1301] - Starting heartbeat executor: renew interval is: 30
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.InstanceInfoReplicator.<init>[60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.DiscoveryClient.<init>[475] - Discovery Client initialized at timestamp 1597389018329 with initial instances count: 0
+2020-08-14 15:10:18 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[66] - Initializing ...
+2020-08-14 15:10:18 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.initRemoteRegionRegistry[153] - Finished initializing remote region registries. All known remote regions: []
+2020-08-14 15:10:18 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.initialize[73] - Initialized
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.DiscoveryClient$3.notify[1337] - Saw local status change event StatusChangeEvent [timestamp=1597389018449, current=UP, previous=STARTING]
+2020-08-14 15:10:18 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 15:10:18 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initAcceptGroup[147] - [Container] acceptGroup线程池Epoll类型：false 
+2020-08-14 15:10:18 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.initWorkerGroup[135] - [Container] workerGroup线程池Epoll类型：false 
+2020-08-14 15:10:18 [INFO ] com.centify.boot.web.embedded.netty.core.NettyServletWebServer.lambda$start$0[115] - [Container] 容器启动成功！服务端IP: 0.0.0.0监听端口：9001
+2020-08-14 15:10:18 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61] - Started EurekaApplication in 496.029 seconds (JVM running for 497.082)
+2020-08-14 15:10:25 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status UP (replication=false)
+2020-08-14 15:10:25 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 15:12:26 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[242] - Got 1 instances from neighboring DS node
+2020-08-14 15:12:26 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[243] - Renew threshold is: 1
+2020-08-14 15:12:26 [INFO ] com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic[254] - Changing status to UP
+2020-08-14 15:13:26 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry$EvictionTask.run[1247] - Running the evict task with compensationTime 0ms
+2020-08-14 15:14:08 [INFO ] com.netflix.discovery.DiscoveryClient.register[854] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001: registering service...
+2020-08-14 15:14:08 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[79] - Shutting down ...
+2020-08-14 15:14:08 [INFO ] com.netflix.eureka.registry.AbstractInstanceRegistry.register[266] - Registered instance COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 with status DOWN (replication=false)
+2020-08-14 15:14:08 [INFO ] com.netflix.discovery.DiscoveryClient.register[863] - DiscoveryClient_COM.CENTIFY.STORE.STORE-EUREKA/admin-tl:com.centify.store.store-eureka:9001 - registration status: 204
+2020-08-14 15:14:08 [INFO ] com.netflix.eureka.DefaultEurekaServerContext.shutdown[84] - Shut down
+2020-08-14 15:14:08 [INFO ] com.netflix.discovery.DiscoveryClient.shutdown[916] - Shutting down DiscoveryClient ...
